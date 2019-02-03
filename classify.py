@@ -61,26 +61,6 @@ class classify:
 				file = open('files/spam_predicted.txt','a+')
 				file.write('{},{}\n'.format(category_predict,self.dataset_main['sentence'][x]))
 
-		# for x in range(len(X_validate)):
-		    
-		#     result = self.model.predict(X_validate[x].reshape(1,X_test.shape[1]),batch_size=1,verbose = 2)[0]
-
-		#     if np.argmax(result) == np.argmax(Y_validate[x]):
-		#         if np.argmax(Y_validate[x]) == 0:
-		#             neg_correct += 1
-		#         else:
-		#             pos_correct += 1
-		       
-		#     if np.argmax(Y_validate[x]) == 0:
-		#         neg_cnt += 1
-		#     else:
-		#         pos_cnt += 1
-
-
-
-		# print("pos_acc", pos_correct/pos_cnt*100, "%")
-		# print("neg_acc", neg_correct/neg_cnt*100, "%")
-
 	def load_model(self):
 
 		json_file = open('Models/Model-Final.json','r')
