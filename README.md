@@ -9,7 +9,7 @@ Implementation of RNN Keras with LTSM on detecting spam sms messages
 
 
 ## Observation
-Currently 87% spam prediction. Modified the dataset by multiplying every spam sample by 50 since the spam sample count is low. This allows me to balance the data and improve model accuracy.
+Currently 87% spam prediction on 1 epoch. Modified the dataset by multiplying every spam sample by 50 since the spam sample count is low. This allows me to balance the data and improve model accuracy.
 
 
 ## Built With
